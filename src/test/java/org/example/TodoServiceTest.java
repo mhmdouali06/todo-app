@@ -1,7 +1,6 @@
 package org.example;
 
-import org.example.Todo;
-import org.example.TodoService;
+
 
 import org.junit.Before;
 import org.junit.Test;
