@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TodoService {
-    public List<Todo> todoList=new ArrayList<>();
+    private final List<Todo> todoList = new ArrayList<>();
     public void addTodo(Todo todo) {
         todo.setCompleted(false);
         if (todo.getTitle() == null || todo.getTitle().trim().isEmpty()) {
