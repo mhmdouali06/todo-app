@@ -46,7 +46,8 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+            bat 'docker rm -f todo-app-container || rem'
+            bat 'docker run -d --name todo-app-container todo-app:latest'
         }
     }
 }
